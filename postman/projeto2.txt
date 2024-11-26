@@ -1,0 +1,10 @@
+Pergunta 1: Os testes são automatizados e escritos em Gherkin, indicando a possibilidade de
+uso de ferramentas de automação de testes.
+
+
+Pergunta 2: Não se configuram como testes End-To-End, concentrando-se em aspectos
+específicos da API em vez de abranger todo o fluxo de interações do usuário.
+
+Pergunta 3: Para garantir a eficácia em modo de regressão, é crucial manter um ambiente
+controlado, dados de teste consistentes, integrar a execução dos testes no processo de
+integração contínua e realizar a manutenção contínua dos testes à medida que o código evolui.
