@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "61b8b284-a241-4044-bbd4-2bce609461e5",
+		"name": "Projeto2 - QA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39640421"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "Verificar obtenção de todos os personagens",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}character",
+							"host": [
+								"{{URL}}character"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verificar a obtenção de informações de um personagem que não existe (Caso negativo)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}character/2000",
+							"host": [
+								"{{URL}}character"
+							],
+							"path": [
+								"2000"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verificar a obtenção de episódios paginados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}episode?page=2",
+							"host": [
+								"{{URL}}episode"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verificar a obtenção de informações de um episódio que não existe (Caso negativo)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}episode/500",
+							"host": [
+								"{{URL}}episode"
+							],
+							"path": [
+								"500"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verificar a obtenção de informações sobre uma localização",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}location/1",
+							"host": [
+								"{{URL}}location"
+							],
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verificar o filtro de episódios por nome",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}episode?name=Pilot",
+							"host": [
+								"{{URL}}episode"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Pilot"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verificar o filtro de personagens por status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}character?status=Alive",
+							"host": [
+								"{{URL}}character"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "Alive"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
